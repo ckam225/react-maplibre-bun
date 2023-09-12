@@ -1,6 +1,3 @@
-import  { useEffect} from 'react';
-// import maplibregl, {} from 'maplibre-gl';
-// import 'maplibre-gl/dist/maplibre-gl.css';
 import Maplibre from "./Map/map";
 import Marker from "./Map/markers";
 
