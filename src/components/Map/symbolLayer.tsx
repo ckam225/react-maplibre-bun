@@ -2,7 +2,6 @@ import React, { ReactElement, useEffect } from 'react'
 import {useMap} from './hooks'
 import pin from '../../assets/car.svg';
 
-
 type LayerPropProps =  {
     coordinate: [number,number],
     color?: string,
@@ -29,11 +28,15 @@ export default function SymbolLayer(prop: LayerPropProps){
                 img.onload = () => map.addImage('marker', img);
                 img.src = pin;
 
+                
+
                 // // method 2
                 // map.loadImage("http://storage.lineo.ci/transports/places/images/restaurant.png", function(error, image) {
                 //     if (error) throw error;
                 //     map.addImage("marker", image as HTMLImageElement)
                 // });
+
+
                 map.addLayer({
                     id: 'my-marker',
                     type: 'symbol',
@@ -64,5 +67,7 @@ export default function SymbolLayer(prop: LayerPropProps){
 
        return <React.Fragment/>
 }
+
+
 
 
