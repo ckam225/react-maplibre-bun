@@ -1,4 +1,4 @@
-import React, {  PropsWithChildren, ReactElement, useEffect } from 'react'
+import React, { ReactElement, useEffect } from 'react'
 import {useMap} from './hooks'
 import maplibregl from 'maplibre-gl';
 import ReactDomServer from "react-dom/server"

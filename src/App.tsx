@@ -1,4 +1,4 @@
-import Map from "./components/ReactMapGL"
+import Map from "./components/BaseMap"
 
 function App() {
   
